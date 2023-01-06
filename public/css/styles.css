@@ -1,0 +1,200 @@
+/* styles.css de MERCADO LIEBRE - MÓDULO 04 */
+
+/* fuente tipográfica: Roboto regular 400 */
+
+/* paleta de colores:
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+*/
+
+/* íconos https://fontawesome.com/icons?d=gallery&m=free */
+
+/* estilos generales */
+
+* { 
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    }
+
+body {
+    font-family:'Roboto', sans-serif;
+    background-color: #ebebeb;
+    }
+
+/* estilos del header */
+
+header {background-color: #EAC926;}
+
+p {font-size: 12px;}
+
+div.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    }
+
+header div.cabecera p {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+header div.logotipo {
+    padding: 10px;
+    width: 50%;
+    }
+
+header .form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+    }
+
+header .form .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    }
+    
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+    }
+
+header nav {
+    font-size: 12px;
+    margin-left: 20px;
+    }
+
+header ul li {
+    list-style-type: none;
+    }
+    
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    }
+
+div.burger-menu {text-align: center}
+
+div.burger-menu i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #0044AA;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    }
+
+section.banner img { width: 100%; }
+
+/* estilos del main */
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    }
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;    
+    }
+
+main section article img { width: 100%; }
+    
+main section article i, .discount { color: #39b54a; } /*camioncito*/
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+article div.articulo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+    }
+
+main section h3 { margin: 20px 0px; }
+
+h3, .descripcion { color: #666; }
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+    }
+
+.descuento { width: 70% }    
+
+.descuento, .descripcion {
+    font-size: 16px;
+    font-weight: normal;
+    }
+
+.descripcion {
+    display: none;
+    margin-top: 20px;
+    }
+
+/* estilos del footer */
+
+footer {
+    background-color: white;
+    padding: 5vh 2vw;
+}
+
+.icono-footer {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    }
+
+footer h4 {
+    color: #666;
+    text-align: center;
+    }
+
+footer p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 5vh;
+    }
+
+#copyright {
+    text-align: left;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    }
+
+/* media queries */
+
+@media ( min-width: 769px ) {
+    main section div.productos article { width: 22%; }
+    }
+

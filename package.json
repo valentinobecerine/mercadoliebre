@@ -1,0 +1,15 @@
+{
+  "name": "mercadoliebre",
+  "version": "1.0.0",
+  "description": "MODULO04-mercadoliebre",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "valentino-becerine",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
