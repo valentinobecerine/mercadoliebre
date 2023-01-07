@@ -28,7 +28,7 @@ body {
 
 /* estilos del header */
 
-header {background-color: #EAC926;}
+header { background-color: #EAC926; }
 
 p {font-size: 12px;}
 
@@ -42,12 +42,15 @@ header div.cabecera p {
         width: 100%;
         text-align: center;
         margin-top: 10px;
+        display: flex;
     }
 
 header div.logotipo {
     padding: 10px;
     width: 50%;
     }
+
+.anuncio-1 { margin: auto }
 
 header .form {
     width: 50%;
@@ -64,8 +67,8 @@ header .form .input {
     color: #666;
     padding: 2px;
     }
-    
-header .form .submit{
+
+header .form .submit {
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
@@ -75,6 +78,7 @@ header .form .submit{
 header nav {
     font-size: 12px;
     margin-left: 20px;
+    display: none
     }
 
 header ul li {
@@ -86,7 +90,10 @@ header ul li a {
     color: #000;
     }
 
-div.burger-menu {text-align: center}
+div.burger-menu { 
+    text-align: center;
+    display: block;
+    }
 
 div.burger-menu i {
     width: 40px;
@@ -108,9 +115,14 @@ main {
     margin: 0 auto;
     }
 
+main section .productos { 
+    display: flex;
+    flex-wrap: wrap;
+    }
+
 main section article {
     background-color: #fff;
-    margin: 10px 0px;    
+    margin: 10px;    
     }
 
 main section article img { width: 100%; }
@@ -150,7 +162,10 @@ h3, .descripcion { color: #666; }
     width: 30%;
     }
 
-.descuento { width: 70% }    
+.descuento { 
+    width: 70%;
+    color:#39b54a;
+    }    
 
 .descuento, .descripcion {
     font-size: 16px;
@@ -194,7 +209,30 @@ footer p {
 
 /* media queries */
 
-@media ( min-width: 769px ) {
-    main section div.productos article { width: 22%; }
+/* navegación en tablets: */
+
+@media ( min-width: 361px ) {
+    .descripcion { display: block }
+    header nav { display: block; }
+    div.burger-menu { display: none; }
+    div.cabecera { flex-wrap: nowrap; }
+    header .form { width: auto; }
+    header nav { display: flex; justify-content: space-between; }
+    header nav li { width: auto; padding: 10px; margin: 1% 0%; }
+    .lista-1, .lista-2 { display: flex; }
     }
 
+/* navegación en desktop: */
+
+@media ( min-width: 769px ) {
+    main section div.productos article { width: 22%; }
+    .descripcion { display: block }
+    main section article { box-shadow: 0px 0px 10px rgb(100, 100, 100); }                 /* https://www.cssmatic.com/box-shadow */
+    header nav { display: block; }
+    div.burger-menu { display: none; }
+    div.cabecera { flex-wrap: nowrap; }
+    header .form { width: auto; }
+    header nav { display: flex; justify-content: space-between; }
+    header nav li { width: auto; padding: 10px; margin: 1% 0%; }
+    .lista-1, .lista-2 { display: flex; }
+    }
